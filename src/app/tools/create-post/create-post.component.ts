@@ -83,7 +83,7 @@ uploadPost(comment: string){
       },
       onComplete: (docId) => {
         alert("upload text success!");
-        window.location.reload();
+        this.router.navigate(['profile']);
       },
       onFail: (err) => {
         alert(err);

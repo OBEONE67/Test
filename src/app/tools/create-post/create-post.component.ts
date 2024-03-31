@@ -5,6 +5,7 @@ import { FirebaseTSStorage } from 'firebasets/firebasetsStorage/firebaseTSStorag
 import { FirebaseTSApp } from 'firebasets/firebasetsApp/firebaseTSApp';
 import { FirebaseTSAuth } from 'firebasets/FirebaseTSAuth/firebaseTSAuth';
 
+
 @Component({
   selector: 'app-create-post',
   templateUrl: './create-post.component.html',
@@ -15,6 +16,7 @@ export class CreatePostComponent {
   auth = new FirebaseTSAuth();
   firestore = new FirebaseTSFirestore();
   storage = new FirebaseTSStorage();
+  router: any;
 
   constructor() {
     
@@ -52,6 +54,8 @@ export class CreatePostComponent {
             onComplete: (docId) => {
               alert("upload text/photo success!");
               window.location.reload();
+              this.router.navigate(['profile']);
+              
             },
             onFail: (err) => {
               alert(err);

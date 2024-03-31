@@ -53,7 +53,6 @@ export class CreatePostComponent {
             },
             onComplete: (docId) => {
               alert("upload text/photo success!");
-              window.location.reload();
               this.router.navigate(['profile']);
               
             },

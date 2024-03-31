@@ -12,24 +12,41 @@
     
 }
 
-#box-post{
+.box-post{
     display: flex;
     background-color: pink;
     border-radius: 1em;
     margin-bottom: 20px;
     font-size: 20px;
+    overflow: hidden;
+    -webkit-line-clamp: 3; /* กำหนดจำนวนบรรทัดที่ต้องการให้แสดง */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+  
+  
+  
     
-
 
     
 }
 
-#Username{
+
+.Username{
     font-family: "Ranchers", sans-serif;
     font-weight: 400;
     font-style: normal;
-
     
+
+}
+
+.comment{
+    /* ให้ข้อความไม่เกินขอบ */
+  overflow: hidden;
+  -webkit-line-clamp: 3; /* กำหนดจำนวนบรรทัดที่ต้องการให้แสดง */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 
 .fa-heart, .fa-heart-o{

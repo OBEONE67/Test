@@ -1,12 +1,13 @@
 <div id="box">
-    <mat-card id="box-post" >
-        <mat-card-header>
-            <mat-card-title id="Username">
+    <mat-card class="box-post" >
+        <mat-card-header >
+            <mat-card-title class="comment">
                 {{creatorUsername}}
             </mat-card-title>
+            
         </mat-card-header>
-        <mat-card-content>
-            : {{postData?.comment}}
+        <mat-card-content class="comment">
+           : {{postData?.comment}}
         </mat-card-content>
         
         <img class="img-post" mat-card-image src="{{postData?.imageUrl}}">

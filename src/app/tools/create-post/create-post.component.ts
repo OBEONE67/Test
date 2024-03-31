@@ -52,7 +52,6 @@ export class CreatePostComponent {
               timestamp: FirebaseTSApp.getFirestoreTimestamp()
             },
             onComplete: (docId) => {
-              alert("upload text/photo success!");
               this.router.navigate(['profile']);
               
             },

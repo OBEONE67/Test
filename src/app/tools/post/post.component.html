@@ -1,0 +1,24 @@
+<div id="box">
+    <mat-card id="box-post" >
+        <mat-card-header>
+            <mat-card-title id="Username">
+                {{creatorUsername}}
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            : {{postData?.comment}}
+        </mat-card-content>
+        
+        <img class="img-post" mat-card-image src="{{postData?.imageUrl}}">
+    
+    
+        <mat-card-actions>
+                <span (click)="toggleLike()" class="fa fa-heart" aria-hidden="true" *ngIf="isLiked"></span>
+                <span (click)="toggleLike()" class="fa fa-heart-o" aria-hidden="true" *ngIf="!isLiked"></span>
+                <a class="likeCount">{{ likeCount }}</a>
+              
+            <mat-icon (click)="onReplyClick()" class="action-item" color="accent">chat_bubble_outline</mat-icon>
+        </mat-card-actions>
+    
+    </mat-card>
+</div>

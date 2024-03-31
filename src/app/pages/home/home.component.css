@@ -1,0 +1,25 @@
+
+.home-page{
+    height: 100vh;
+    background: linear-gradient(to top, #6e6ef6 50%, #c9c9ff 90%) no-repeat;
+    font-family: "Ranchers", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.landing-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-left-content{
+    text-align: right;
+    padding: 15em 50em 1em 1em;
+    
+}
+
+.landing-left-content p{
+    font-size: 1.5em;
+    
+}

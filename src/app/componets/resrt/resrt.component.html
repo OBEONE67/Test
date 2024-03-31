@@ -1,0 +1,24 @@
+<div class="outer">
+    <div class="container">
+        <div class="row pt-2">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <h3 class="pt-3 font-weight-bold">Reset Password</h3>
+                    </div>
+                    <div class="panel-body p-3">
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa-solid fa-user p-2"></span>
+                                        <input #resetEmail formControlName="email" type="text" placeholder="Email" required>                                       
+                                </div>
+                            </div>
+                            
+                            <button (click)="onReset(resetEmail)" type="submit" class="btn btn-primary btn-block mt-4 w-100">Send</button>
+                            <div class="text-center pt-4 text-muted">Don't Reset Email?<a id="forget" (click)="toSignup()"> Sign up /   </a><a id="forget" (click)="toLogin()"> Login</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

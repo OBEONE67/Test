@@ -1,0 +1,36 @@
+<div class="outer">
+    <div class="container">
+        <div class="row pt-2">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <h3 class="pt-3 font-weight-bold">Login</h3>
+                    </div>
+                    <div class="panel-body p-3">
+                        
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa-solid fa-user p-2"></span>
+                                        <input #loginemail formControlName="email" type="text" placeholder="Email" required>                                       
+                                </div>
+                            </div>
+                            <div class="form-group pt-3">
+                                <div class="input-field" >
+                                    <span class="fa-solid fa-lock p-2"></span>
+                                        <input #loginpassword formControlName="password" [type]="type" placeholder="Password" required> 
+                                        <span (click)="hideShowPass()" class="fa-solid {{eyeIcon}}"></span>                       
+                                </div>
+                            </div>
+                            
+                            <div class="form-inline fr mt-4">
+                                <a (click)="toReset()" id="forget" class="font-weight-bold">Forget Password?</a>
+                            </div>
+                            <button (click)="onLogin(loginemail, loginpassword)" type="submit" class="btn btn-primary btn-block mt-4 w-100">Login</button>
+                            <div class="text-center pt-4 text-muted">Don't have account?<a id="forget" (click)="toSignup()"> Sign up/</a><a id="forget" (click)="toHome()"> Back</a></div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
